@@ -1,0 +1,161 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.result-container 
+{
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+h1 
+{
+    font-size: 36px;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+.subtitle 
+{
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+.result-score 
+{
+    font-size: 60px;
+    font-weight: 700;
+    color: #667eea;
+    margin: 20px 0;
+}
+.result-message 
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;         
+}
+.result-message.level-1 
+{
+    background: #fed7d7;
+    color: #742a2a;
+}
+.result-message.level-2 
+{
+    background: #fefcbf;
+    color: #744210;
+}
+.result-message.level-3 
+{
+    background: #c6f6d5;
+    color: #22543d;
+}
+.result-detail 
+{
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+.emoji-big 
+{
+    font-size: 80px;
+    display: block;
+    margin-bottom: 10px;
+}
+.buttons 
+{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.btn 
+{
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+.btn:hover 
+{
+    background: #5a67d8;
+}
+.btn-green 
+{
+    background: #38a169;
+}
+.btn-green:hover 
+{
+    background: #2f855a;
+}
+.btn-outline 
+{
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+.btn-outline:hover 
+{
+    background: #667eea;
+    color: #fff;
+}
+@media (max-width: 600px) 
+{
+    .result-container
+    {
+        padding: 30px 20px;
+    }
+    h1 
+    {
+        font-size: 30px;
+    }
+    .result-score 
+    {
+        font-size: 48px;
+    }
+    .result-message 
+    {
+        font-size: 20px;
+    }
+    .btn 
+    {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+@media (max-width: 400px) 
+{
+    .result-score 
+    {
+        font-size: 38px;
+    }
+    .emoji-big 
+    {
+        font-size: 60px;
+    }
+}
